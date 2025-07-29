@@ -1,0 +1,41 @@
+User-agent: *
+Allow: /
+
+# Important pages for SEO priority
+Allow: /about
+Allow: /services
+Allow: /projects
+Allow: /certifications
+Allow: /news
+Allow: /contact
+Allow: /petroleum-services
+Allow: /offshore-operations
+Allow: /investor-relations
+Allow: /bahrain-operations
+Allow: /media-coverage
+
+# Static assets
+Allow: /images/
+Allow: /attached_assets/
+Allow: /favicon.ico
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://makamin.com.sa/sitemap.xml
+
+# Priority crawling for key personnel and projects
+# عادل عايض النوب - Adel Ayed ALNOOB - CEO
+# علي البريدي - Ali Al-Braidi - Offshore Manager  
+# أحمد الفالح - Ahmed Al-Faleh - Offshore Manager
+# عثمان فاضل الموسى - Othman Fadel Al-Mousa - Chairman
+# إبراهيم أحمد الغامدي - Ibrahim Ahmed Al-Ghamdi - Vice Chairman
+# أرامكو السعودية - Saudi Aramco partnerships
+# مصفاة رأس تنورة - Ras Tanura Refinery projects
+# محطة شدقم - SHEDGUM GOSP-4 operations
+# 1980 يوم صفر حوادث - 1980 days zero accidents
+# 1.2 مليار ريال - SAR 1.2 billion capital
+# آيزو 9001:2015 - ISO 9001:2015 certification
+# توف نورد - TÜV NORD CERT certification
+
+# Crawl-delay (optional, adjust based on server capacity)
+Crawl-delay: 1
