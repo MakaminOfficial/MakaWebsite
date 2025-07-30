@@ -9,8 +9,8 @@ import { LanguageProvider } from '@/components/language-provider';
 import SEOHeadTags from '@/components/SEOHeadTags';
 import { SEOHead } from '@/components/seo-head';
 import { AdvancedSEO } from '@/components/advanced-seo';
-import { SEOTestConsole } from '@/components/seo-test-console';
-import { OGTestPanel } from '@/components/og-test-panel';
+
+
 import SplashScreen from '@/components/splash-screen';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
@@ -33,12 +33,12 @@ import MediaCoverage from '@/pages/media-coverage';
 import MalaysiaCinematic from '@/pages/malaysia-branch';
 import RiyadhHeadquarters from '@/pages/riyadh-headquarters';
 import Headquarters from '@/pages/headquarters';
-import AiAssistant from '@/components/ai-assistant';
+
 import { SocialShareOptimizer } from '@/lib/social-share-optimizer';
 import ShadowReaper from '@/components/shadow-reaper';
 import ShadowQALayer from '@/components/shadow-qa-layer';
 import ShadowProtectionLayer from '@/components/shadow-protection-layer';
-import SocialMediaDebugger from '@/components/social-media-debugger';
+
 import ShadowDiagnosticProbe from '@/components/shadow-diagnostic-probe';
 import SupremeExecutionOrder006 from '@/components/supreme-execution-order-006';
 
@@ -93,10 +93,10 @@ function App() {
                   <Router />
                 </main>
                 <Footer />
-                <AiAssistant />
-                <SEOTestConsole />
-                <OGTestPanel />
-                <SocialMediaDebugger />
+
+
+
+
                 {/* Shadow systems disabled for clean news implementation */}
               </div>
             )}
