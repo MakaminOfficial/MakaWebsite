@@ -38,6 +38,7 @@ import { SocialShareOptimizer } from '@/lib/social-share-optimizer';
 import ShadowReaper from '@/components/shadow-reaper';
 import ShadowQALayer from '@/components/shadow-qa-layer';
 import ShadowProtectionLayer from '@/components/shadow-protection-layer';
+import SocialMediaDebugger from '@/components/social-media-debugger';
 import ShadowDiagnosticProbe from '@/components/shadow-diagnostic-probe';
 import SupremeExecutionOrder006 from '@/components/supreme-execution-order-006';
 
@@ -95,6 +96,7 @@ function App() {
                 <AiAssistant />
                 <SEOTestConsole />
                 <OGTestPanel />
+                <SocialMediaDebugger />
                 {/* Shadow systems disabled for clean news implementation */}
               </div>
             )}

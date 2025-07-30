@@ -84,12 +84,33 @@ app.use((req, res, next) => {
     res.sendFile('client/public/google-site-verification.html', { root: process.cwd() });
   });
   
-  // OG banner with proper headers
+  // OG banner with proper headers and cache busting
   app.get('/images/og-banner.svg', (req, res) => {
     res.setHeader('Content-Type', 'image/svg+xml');
-    res.setHeader('Cache-Control', 'public, max-age=31536000');
+    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
     res.sendFile('client/public/images/og-banner.svg', { root: process.cwd() });
   });
+  
+  // PNG version using authentic Makamin logo
+  app.get('/images/og-banner.png', (req, res) => {
+    res.setHeader('Content-Type', 'image/png');
+    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
+    // Serve authentic Makamin logo
+    res.sendFile('attached_assets/logo_makamin_clean_1752524503536.png', { root: process.cwd() });
+  });
+  
+  // Serve attached assets directory
+  app.use('/attached_assets', express.static('attached_assets', {
+    setHeaders: (res) => {
+      res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+      res.setHeader('Pragma', 'no-cache');
+      res.setHeader('Expires', '0');
+    }
+  }));
   
   // IndexNow submission endpoint
   app.get('/IndexNow-submit.txt', (req, res) => {
