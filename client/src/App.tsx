@@ -10,6 +10,7 @@ import SEOHeadTags from '@/components/SEOHeadTags';
 import { SEOHead } from '@/components/seo-head';
 import { AdvancedSEO } from '@/components/advanced-seo';
 import { SEOTestConsole } from '@/components/seo-test-console';
+import { OGTestPanel } from '@/components/og-test-panel';
 import SplashScreen from '@/components/splash-screen';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
@@ -33,6 +34,7 @@ import MalaysiaCinematic from '@/pages/malaysia-branch';
 import RiyadhHeadquarters from '@/pages/riyadh-headquarters';
 import Headquarters from '@/pages/headquarters';
 import AiAssistant from '@/components/ai-assistant';
+import { SocialShareOptimizer } from '@/lib/social-share-optimizer';
 import ShadowReaper from '@/components/shadow-reaper';
 import ShadowQALayer from '@/components/shadow-qa-layer';
 import ShadowProtectionLayer from '@/components/shadow-protection-layer';
@@ -92,6 +94,7 @@ function App() {
                 <Footer />
                 <AiAssistant />
                 <SEOTestConsole />
+                <OGTestPanel />
                 {/* Shadow systems disabled for clean news implementation */}
               </div>
             )}

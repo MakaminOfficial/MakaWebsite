@@ -84,6 +84,13 @@ app.use((req, res, next) => {
     res.sendFile('client/public/google-site-verification.html', { root: process.cwd() });
   });
   
+  // OG banner with proper headers
+  app.get('/images/og-banner.svg', (req, res) => {
+    res.setHeader('Content-Type', 'image/svg+xml');
+    res.setHeader('Cache-Control', 'public, max-age=31536000');
+    res.sendFile('client/public/images/og-banner.svg', { root: process.cwd() });
+  });
+  
   // IndexNow submission endpoint
   app.get('/IndexNow-submit.txt', (req, res) => {
     res.setHeader('Content-Type', 'text/plain');

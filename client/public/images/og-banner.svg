@@ -1,0 +1,63 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2c5282;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a365d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c5a66e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f1d35a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c5a66e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="40" fill="#c5a66e" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="60" fill="#f1d35a" opacity="0.1"/>
+  <path d="M0,300 Q300,250 600,300 T1200,300" stroke="#c5a66e" stroke-width="2" fill="none" opacity="0.3"/>
+  
+  <!-- Logo Placeholder Circle -->
+  <circle cx="300" cy="315" r="80" fill="#c5a66e" opacity="0.9" filter="url(#glow)"/>
+  <text x="300" y="325" text-anchor="middle" fill="#1a365d" font-family="Arial, sans-serif" font-size="24" font-weight="bold">مكامن</text>
+  
+  <!-- Main Title -->
+  <text x="600" y="250" text-anchor="middle" fill="url(#titleGradient)" font-family="Arial, sans-serif" font-size="48" font-weight="bold" filter="url(#glow)">
+    مكامن السعودية القابضة
+  </text>
+  
+  <!-- English Title -->
+  <text x="600" y="300" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="600">
+    Makamin Saudi Holding
+  </text>
+  
+  <!-- Description -->
+  <text x="600" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="20">
+    شركة خدمات النفط والغاز | رأس مال 1.2 مليار ريال
+  </text>
+  
+  <!-- Capital Highlight -->
+  <rect x="450" y="420" width="300" height="50" rx="25" fill="#c5a66e" opacity="0.2"/>
+  <text x="600" y="450" text-anchor="middle" fill="#f1d35a" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    SAR 1.2 Billion Capital
+  </text>
+  
+  <!-- Website URL -->
+  <text x="600" y="520" text-anchor="middle" fill="#cbd5e0" font-family="Arial, sans-serif" font-size="16">
+    makamin.com.sa
+  </text>
+  
+  <!-- Decorative Bottom Line -->
+  <rect x="400" y="580" width="400" height="3" fill="url(#titleGradient)" rx="2"/>
+</svg>
