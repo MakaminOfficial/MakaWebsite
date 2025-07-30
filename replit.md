@@ -602,12 +602,12 @@ Visual standards: Royal-grade precision suitable for regulatory and ministerial 
 - **ARTISTIC EXCELLENCE**: "الدهشة والفن" achieved through sophisticated animation and visual depth
 
 **COMPLETE SEO OPTIMIZATION FOR GOOGLE FIRST RANKING (January 21, 2025 - 10:50 PM)**: Revolutionary SEO implementation
-- **STRATEGIC KEYWORD DOMINANCE**: Complete optimization for all personnel names to rank first in Google searches
-  - عادل عايض النوب (Adel Ayed ALNOOB) - CEO name optimization
-  - علي البريدي (Ali Al-Braidi) - Offshore Manager name optimization  
-  - أحمد الفالح (Ahmed Al-Faleh) - Offshore Manager name optimization
-  - عثمان فاضل الموسى (Othman Fadel Al-Mousa) - Chairman name optimization
-  - إبراهيم أحمد الغامدي، خالد حمدان السيف، حمد القحطاني، محمد جاسم الفواز - All board members
+- **STRATEGIC KEYWORD DOMINANCE**: Complete optimization for company and project keywords to rank first in Google searches
+  - شركة مكامن السعودية القابضة (Saudi Makamin Holding Company) - Primary company name optimization
+  - مكامن للخدمات البترولية (Makamin Petroleum Services) - Services optimization  
+  - شركة خدمات الطاقة (Energy Services Company) - Industry optimization
+  - قطاع الطاقة السعودي (Saudi Energy Sector) - Market optimization
+  - رؤية 2030 (Vision 2030) - Strategic alignment optimization
 - **PROJECT & COMPANY NAME OPTIMIZATION**: Strategic targeting for business searches
   - مكامن السعودية القابضة (Saudi Makamin Holding Company)
   - أرامكو السعودية (Saudi Aramco) partnerships

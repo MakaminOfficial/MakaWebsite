@@ -13,7 +13,7 @@ export interface SEOConfig {
 export const baseSEO: SEOConfig = {
   title: "مكامن السعودية القابضة - شركة خدمات النفط والغاز برأس مال 1.2 مليار ريال",
   description: "شركة مكامن السعودية القابضة لخدمات النفط والغاز برأس مال 1.2 مليار ريال سعودي. خدمات بترولية وبحرية متكاملة، شراكات مع أرامكو السعودية، مصفاة رأس تنورة، محطة شدقم. شهادات آيزو 9001:2015 دولية، سجل سلامة 1980 يوم صفر حوادث منذ عام 2008.",
-  keywords: "مكامن، مكامن السعودية القابضة، Makamin Saudi Holding، مكامن أوفشور، Makamin Offshore Saudi، مكامن للخدمات البترولية، Makamin Petroleum Services، أرامكو السعودية، Saudi Aramco، مصفاة رأس تنورة، Ras Tanura Refinery، محطة شدقم، SHEDGUM GOSP-4، آيزو 9001:2015، ISO 9001:2015، توف نورد، TÜV NORD CERT، 1980 يوم صفر حوادث، 1980 days zero accidents، 1.2 مليار ريال، SAR 1.2 billion، خدمات النفط والغاز، Oil Gas Services، السعودية، Saudi Arabia، رؤية 2030، Vision 2030، خدمات الطاقة، Energy Services، قطاع الطاقة السعودي، Saudi Energy Sector",
+  keywords: "مكامن، مكامن السعودية القابضة، Makamin Saudi Holding، شركة مكامن، Makamin Company، مكامن أوفشور، Makamin Offshore Saudi، مكامن للخدمات البترولية، Makamin Petroleum Services، أرامكو السعودية، Saudi Aramco، مصفاة رأس تنورة، Ras Tanura Refinery، محطة شدقم، SHEDGUM GOSP-4، آيزو 9001:2015، ISO 9001:2015، توف نورد، TÜV NORD CERT، 1980 يوم صفر حوادث، 1980 days zero accidents، 1.2 مليار ريال، SAR 1.2 billion، خدمات النفط والغاز، Oil Gas Services، السعودية، Saudi Arabia، رؤية 2030، Vision 2030، خدمات الطاقة، Energy Services، قطاع الطاقة السعودي، Saudi Energy Sector، شركة خدمات الطاقة، Energy Services Company",
   ogImage: "https://makamin.com.sa/images/makamin-social-preview.jpg",
   canonicalUrl: "https://makamin.com.sa"
 };
