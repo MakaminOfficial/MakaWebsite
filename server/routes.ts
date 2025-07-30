@@ -3,8 +3,16 @@ import { createServer, type Server } from "http";
 import { z } from "zod";
 import { storage } from "./storage";
 import { insertContactMessageSchema, insertShareholderSchema } from "@shared/schema";
+import { domainRedirectMiddleware, domainHealthCheck } from "./domain-middleware";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Domain middleware for custom domain handling
+  app.use(domainRedirectMiddleware);
+  
+  // Domain health check endpoint
+  app.get("/health", domainHealthCheck);
+  app.get("/api/health", domainHealthCheck);
+  
   // Contact form submission
   app.post("/api/contact", async (req, res) => {
     try {

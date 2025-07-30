@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكامن السعودية القابضة - إصلاح مؤقت</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #f1c40f;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .status {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .redirect-btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            margin: 20px 0;
+            transition: all 0.3s;
+        }
+        .redirect-btn:hover {
+            background: #c0392b;
+            transform: scale(1.05);
+        }
+        .auto-redirect {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">مكامن</div>
+        <h1>شركة مكامن السعودية القابضة</h1>
+        
+        <div class="status">
+            <h2>⚠️ إصلاح SSL Certificate جاري</h2>
+            <p>النطاق makamin.com.sa قيد الإصلاح التقني</p>
+            <p>يتم حالياً ربط شهادة SSL الصحيحة</p>
+        </div>
+
+        <a href="https://maka-website-adelalnoob.replit.app" class="redirect-btn">
+            🚀 ادخل الموقع الآن
+        </a>
+
+        <div class="auto-redirect">
+            <p>سيتم التوجيه التلقائي خلال 10 ثوانٍ...</p>
+        </div>
+
+        <div class="status">
+            <h3>📞 معلومات الاتصال</h3>
+            <p>الهاتف: +966 56 330 8727</p>
+            <p>البريد: info@makamin.com.sa</p>
+            <p>المقر: الرياض، المملكة العربية السعودية</p>
+        </div>
+    </div>
+
+    <script>
+        // Auto redirect after 10 seconds
+        setTimeout(function() {
+            window.location.href = 'https://maka-website-adelalnoob.replit.app';
+        }, 10000);
+
+        // Update countdown
+        let countdown = 10;
+        const countdownElement = document.querySelector('.auto-redirect p');
+        
+        setInterval(function() {
+            countdown--;
+            if (countdown > 0) {
+                countdownElement.textContent = `سيتم التوجيه التلقائي خلال ${countdown} ثوانٍ...`;
+            } else {
+                countdownElement.textContent = 'جاري التوجيه...';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
