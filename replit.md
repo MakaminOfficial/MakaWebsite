@@ -221,17 +221,19 @@ Visual standards: Royal-grade precision suitable for regulatory and ministerial 
 
 ### Latest Updates (January 29, 2025)
 
-**DNS CONFIGURATION SUCCESSFULLY CORRECTED (January 30, 2025 - 1:45 PM)**: Unified domain routing implemented
-- **SSL CONFIGURATION**: Successfully set to "Flexible" mode ✅
-- **DNS CORRECTION APPLIED**: Proper CNAME configuration implemented
-  - CNAME www → makamin.com.sa (Proxied) ✅
-  - A makamin.com.sa → 34.111.179.208 (Proxied) ✅
-  - A makamin.com.sa → 34.117.33.233 (Proxied) ✅
-- **TECHNICAL SUCCESS**: All domain variations now route to same destination
-- **CONFIGURATION VERIFIED**: Both makamin.com.sa and www.makamin.com.sa use consistent routing
-- **CLOUDFLARE OPTIMIZATION**: Proper CNAME setup ensures optimal CDN performance
-- **STATUS**: DNS configuration complete and unified
-- **NEXT VERIFICATION**: Testing website accessibility on both domain variations
+**REPLIT SSL CERTIFICATE REQUIREMENT IDENTIFIED (January 30, 2025 - 2:05 PM)**: Custom domain needs origin certificate
+- **CLOUDFLARE DNS**: Successfully configured with proper CNAME and A records ✅
+- **CLOUDFLARE SSL**: Set to "Flexible" mode ✅
+- **REPLIT DOMAIN STATUS**: makamin.com.sa shows "Failed" - requires SSL certificate
+- **ROOT CAUSE**: Replit custom domains require origin certificate for HTTPS functionality
+- **SOLUTION REQUIRED**: Generate Origin Certificate in Cloudflare and upload to Replit
+- **PROCESS**: 
+  1. Create Origin Certificate in Cloudflare SSL/TLS → Origin Server
+  2. Copy certificate and private key 
+  3. Upload to Replit domain settings
+  4. Wait for activation (2-5 minutes)
+- **EXPECTED RESULT**: Domain status will change from "Failed" to "Active"
+- **USER ACTION**: Create and install Origin Certificate in Replit
 
 **VERCEL DEPLOYMENT 404 ERROR RESOLUTION (January 29, 2025 - 10:30 PM)**: Critical deployment configuration fixes applied
 - **404 ERROR IDENTIFIED**: Vercel configuration issue preventing proper static file serving  
