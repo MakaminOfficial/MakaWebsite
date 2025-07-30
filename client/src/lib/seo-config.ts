@@ -11,17 +11,17 @@ export interface SEOConfig {
 }
 
 export const baseSEO: SEOConfig = {
-  title: "Saudi Makamin Holding Company | Oil & Gas Services",
-  description: "Saudi Makamin Holding Company | Oil & Gas Services | SAR 1.2 Billion Capital | Aramco Partnership | ISO Certified since 2008",
+  title: "شركة مكامن السعودية القابضة | خدمات النفط والغاز",
+  description: "شركة مكامن السعودية القابضة - ريادة في خدمات النفط والغاز، الحلول البحرية، والمشاريع الاستراتيجية.",
   keywords: "مكامن، مكامن السعودية القابضة، Makamin Saudi Holding، شركة مكامن، Makamin Company، مكامن أوفشور، Makamin Offshore Saudi، مكامن للخدمات البترولية، Makamin Petroleum Services، أرامكو السعودية، Saudi Aramco، مصفاة رأس تنورة، Ras Tanura Refinery، محطة شدقم، SHEDGUM GOSP-4، آيزو 9001:2015، ISO 9001:2015، توف نورد، TÜV NORD CERT، 1980 يوم صفر حوادث، 1980 days zero accidents، 1.2 مليار ريال، SAR 1.2 billion، خدمات النفط والغاز، Oil Gas Services، السعودية، Saudi Arabia، رؤية 2030، Vision 2030، خدمات الطاقة، Energy Services، قطاع الطاقة السعودي، Saudi Energy Sector، شركة خدمات الطاقة، Energy Services Company",
-  ogImage: "https://makamin.com.sa/attached_assets/logo mkamin_1753911210691.png",
+  ogImage: "https://makamin.com.sa/og-image.jpg",
   canonicalUrl: "https://makamin.com.sa"
 };
 
 export const pagesSEO: Record<string, SEOConfig> = {
   "/": {
-    title: "Saudi Makamin Holding Company | Oil & Gas Services",
-    description: "Saudi Makamin Holding Company | Oil & Gas Services | SAR 1.2 Billion Capital | Aramco Partnership | ISO Certified since 2008",
+    title: "شركة مكامن السعودية القابضة | خدمات النفط والغاز",
+    description: "شركة مكامن السعودية القابضة - ريادة في خدمات النفط والغاز، الحلول البحرية، والمشاريع الاستراتيجية.",
     keywords: baseSEO.keywords + "، الصفحة الرئيسية، Home Page، مكامن الرئيسية",
     canonicalUrl: "https://makamin.com.sa/",
     structuredData: {
