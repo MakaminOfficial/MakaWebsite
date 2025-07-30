@@ -48,6 +48,36 @@ app.use((req, res, next) => {
     }
   }));
 
+  // Add specific routes for favicon and manifest
+  app.get('/favicon.ico', (req, res) => {
+    res.sendFile('client/public/favicon.ico', { root: process.cwd() });
+  });
+  
+  app.get('/favicon.svg', (req, res) => {
+    res.setHeader('Content-Type', 'image/svg+xml');
+    res.sendFile('client/public/favicon.svg', { root: process.cwd() });
+  });
+  
+  app.get('/manifest.json', (req, res) => {
+    res.setHeader('Content-Type', 'application/manifest+json');
+    res.sendFile('client/public/manifest.json', { root: process.cwd() });
+  });
+  
+  app.get('/browserconfig.xml', (req, res) => {
+    res.setHeader('Content-Type', 'application/xml');
+    res.sendFile('client/public/browserconfig.xml', { root: process.cwd() });
+  });
+  
+  app.get('/robots.txt', (req, res) => {
+    res.setHeader('Content-Type', 'text/plain');
+    res.sendFile('client/public/robots.txt', { root: process.cwd() });
+  });
+  
+  app.get('/sitemap.xml', (req, res) => {
+    res.setHeader('Content-Type', 'application/xml');
+    res.sendFile('client/public/sitemap.xml', { root: process.cwd() });
+  });
+
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
     const message = err.message || "Internal Server Error";
