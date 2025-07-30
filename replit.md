@@ -221,15 +221,15 @@ Visual standards: Royal-grade precision suitable for regulatory and ministerial 
 
 ### Latest Updates (January 29, 2025)
 
-**DOMAIN LINKING IN PROGRESS (January 30, 2025 - 9:25 AM)**: Active domain transfer from Vercel to Replit
-- **ROOT CAUSE CONFIRMED**: makamin.com.sa pointing to Vercel while live working site is on Replit
-- **WORKING SITE VERIFIED**: https://maka-website-adelalnoob.replit.app fully operational with all features
-- **DNS RECORDS IDENTIFIED**: A Record IP: 34.132.134.162 (Replit's apex domain proxy)
-- **CONFIGURATION STATUS**: User implementing DNS changes to point makamin.com.sa to Replit
-- **DNS SETTINGS PROVIDED**: A Record @ → 34.132.134.162, A Record www → 34.132.134.162
-- **TXT VERIFICATION**: Awaiting TXT record from Replit deployment settings after domain addition
-- **EXPECTED COMPLETION TIME**: 5-30 minutes DNS propagation after proper configuration
-- **CURRENT STATUS**: DNS reconfiguration in progress, royal-grade website ready on Replit infrastructure
+**DNS CLEANUP & REPLIT CONFIGURATION (January 30, 2025 - 10:15 AM)**: Critical DNS correction needed
+- **PROBLEM IDENTIFIED**: Mixed Vercel/Replit DNS records causing conflicts
+- **CURRENT INCORRECT A RECORD**: makamin.com.sa → 216.198.79.1 (Vercel - OLD)
+- **REQUIRED A RECORD**: makamin.com.sa → 54.132.134.162 (Replit - NEW from deployment)
+- **CONFLICTING CNAME**: www.makamin.com.sa → cname.vercel-dns.com (REMOVE)
+- **CORRECT TXT VERIFICATION**: replit-verify=6059f2cf-dc7a-4ba2-8489-b86d9b7880c4 (ALREADY ADDED)
+- **ACTION NEEDED**: Remove old Vercel records, update A record to Replit IP
+- **CLEANUP STEPS**: Delete Vercel CNAME, update A record from 216.198.79.1 to 54.132.134.162
+- **STATUS**: DNS cleanup required to complete Replit linking
 
 **VERCEL DEPLOYMENT 404 ERROR RESOLUTION (January 29, 2025 - 10:30 PM)**: Critical deployment configuration fixes applied
 - **404 ERROR IDENTIFIED**: Vercel configuration issue preventing proper static file serving  
