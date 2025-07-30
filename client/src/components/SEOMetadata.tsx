@@ -34,18 +34,13 @@ export default function SEOMetadata({
 }: SEOMetadataProps) {
   const { language } = useLanguageContext();
 
-  // Core people names for SEO optimization
-  const corePersonNames = [
-    'عادل عايض النوب', 'Adel Ayed ALNOOB', 'Adel Ayed Al-Noub',
-    'علي البريدي', 'Ali Al-Braidi', 'Ali Al-Bureidi',
-    'أحمد الفالح', 'Ahmed Al-Faleh',
-    'عثمان فاضل الموسى', 'Othman Fadel Al-Mousa', 'Eng. Othman F. H. Al-Mousa',
-    'إبراهيم أحمد الغامدي', 'Ibrahim Ahmed Al-Ghamdi', 'Ibrahim Ahmed Sabti Alghamdi',
-    'إبراهيم عبدالله الجلال', 'Ibrahim Abdullah Al-Jalal', 'Dr. Ibrahim Abdullah Al-Jallal',
-    'خالد حمدان السيف', 'Khaled Hamdan Alsaif', 'Dr. Khaled Hamdan Alsaif',
-    'حمد القحطاني', 'Hamad Al-Qahtani', 'Dr. Eng. Hamad Al-Qahtani',
-    'محمد جاسم الفواز', 'Mohammad Jassim Ibrahim Alfawaz',
-    'ماجد عبدالله هزاع الشنبري', 'Majed Abdullah Hazza Al-Shanbari'
+  // Core business terms for SEO optimization (no personal names)
+  const coreBusinessTerms = [
+    'شركة خدمات النفط والغاز', 'Oil and Gas Services Company',
+    'خدمات الطاقة', 'Energy Services', 'خدمات بترولية', 'Petroleum Services',
+    'شركة مساهمة سعودية', 'Saudi Joint Stock Company',
+    'رؤية 2030', 'Vision 2030', 'قطاع الطاقة السعودي', 'Saudi Energy Sector',
+    'صناعة البترول', 'Petroleum Industry', 'الصناعات البتروكيماوية', 'Petrochemical Industries'
   ];
 
   // Core projects and companies for SEO
@@ -82,9 +77,9 @@ export default function SEOMetadata({
     '1.2 مليار ريال', 'SAR 1.2 billion', '1.2 billion capital'
   ];
 
-  // All SEO keywords combined
+  // All SEO keywords combined (no personal names)
   const allSEOKeywords = [
-    ...corePersonNames,
+    ...coreBusinessTerms,
     ...coreProjectsCompanies,
     ...technicalTerms,
     ...keywords
@@ -95,8 +90,8 @@ export default function SEOMetadata({
     : 'Saudi Makamin Holding Company - Oil & Gas Services with SAR 1.2 Billion Capital';
 
   const defaultDescription = language === 'ar'
-    ? 'شركة مكامن السعودية القابضة لخدمات النفط والغاز برأس مال 1.2 مليار ريال سعودي. يقودها الرئيس التنفيذي عادل عايض النوب ومجلس إدارة من الخبراء. خدمات بترولية وبحرية متكاملة، شراكات مع أرامكو السعودية، شهادات آيزو دولية، سجل سلامة 1980 يوم صفر حوادث.'
-    : 'Saudi Makamin Holding Company for Oil & Gas Services with SAR 1.2 billion capital. Led by CEO Adel Ayed ALNOOB and expert board of directors. Comprehensive petroleum and marine services, Saudi Aramco partnerships, international ISO certifications, 1980 days zero accident safety record.';
+    ? 'شركة مكامن السعودية القابضة لخدمات النفط والغاز برأس مال 1.2 مليار ريال سعودي. خدمات بترولية وبحرية متكاملة، شراكات مع أرامكو السعودية، شهادات آيزو دولية، سجل سلامة 1980 يوم صفر حوادث. خبرة منذ عام 2008 في قطاع الطاقة السعودي.'
+    : 'Saudi Makamin Holding Company for Oil & Gas Services with SAR 1.2 billion capital. Comprehensive petroleum and marine services, Saudi Aramco partnerships, international ISO certifications, 1980 days zero accident safety record. Expert energy sector experience since 2008.';
 
   useEffect(() => {
     // Update document title
@@ -233,45 +228,37 @@ export default function SEOMetadata({
         "@type": "Organization",
         "name": "Saudi Makamin Holding Company"
       },
-      "employee": [
+      "department": [
         {
-          "@type": "Person",
-          "name": "Adel Ayed ALNOOB",
-          "alternateName": ["عادل عايض النوب", "Adel Ayed Al-Noub"],
-          "jobTitle": "Chief Executive Officer",
-          "worksFor": {
+          "@type": "Organization",
+          "name": "Executive Management",
+          "parentOrganization": {
             "@type": "Organization",
             "name": organizationName
           }
         },
         {
-          "@type": "Person", 
-          "name": "Othman Fadel Al-Mousa",
-          "alternateName": ["عثمان فاضل الموسى", "Eng. Othman F. H. Al-Mousa"],
-          "jobTitle": "Chairman of the Board",
-          "worksFor": {
+          "@type": "Organization", 
+          "name": "Board of Directors",
+          "parentOrganization": {
             "@type": "Organization",
             "name": organizationName
           }
         },
         {
-          "@type": "Person",
-          "name": "Ali Al-Braidi", 
-          "alternateName": ["علي البريدي", "Ali Al-Bureidi"],
-          "jobTitle": "Offshore Operations Manager",
-          "worksFor": {
+          "@type": "Organization",
+          "name": "Offshore Operations Department",
+          "parentOrganization": {
             "@type": "Organization", 
             "name": "Makamin Offshore Saudi Ltd"
           }
         },
         {
-          "@type": "Person",
-          "name": "Ahmed Al-Faleh",
-          "alternateName": ["أحمد الفالح"],
-          "jobTitle": "Offshore Operations Manager", 
-          "worksFor": {
+          "@type": "Organization",
+          "name": "Petroleum Services Department",
+          "parentOrganization": {
             "@type": "Organization",
-            "name": "Makamin Offshore Saudi Ltd"
+            "name": "Makamin Petroleum Services"
           }
         }
       ],

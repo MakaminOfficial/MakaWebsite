@@ -8,9 +8,9 @@ interface SEOHeadTagsProps {
 }
 
 export default function SEOHeadTags({
-  title = 'مكامن السعودية القابضة - عادل عايض النوب، علي البريدي، أحمد الفالح - شركة خدمات النفط والغاز',
-  description = 'شركة مكامن السعودية القابضة برأس مال 1.2 مليار ريال. يقودها الرئيس التنفيذي عادل عايض النوب، مدراء العمليات البحرية علي البريدي وأحمد الفالح، رئيس مجلس الإدارة عثمان فاضل الموسى. شراكات مع أرامكو السعودية، مصفاة رأس تنورة، محطة شدقم. شهادات آيزو 9001:2015 من توف نورد، 1980 يوم صفر حوادث.',
-  keywords = 'عادل عايض النوب, Adel Ayed ALNOOB, علي البريدي, Ali Al-Braidi, أحمد الفالح, Ahmed Al-Faleh, عثمان فاضل الموسى, Othman Fadel Al-Mousa, إبراهيم أحمد الغامدي, Ibrahim Ahmed Al-Ghamdi, خالد حمدان السيف, Khaled Hamdan Alsaif, حمد القحطاني, Hamad Al-Qahtani, محمد جاسم الفواز, Mohammad Jassim Ibrahim Alfawaz, مكامن السعودية القابضة, Saudi Makamin Holding Company, مكامن أوف شور, Makamin Offshore Saudi, أرامكو السعودية, Saudi Aramco, مصفاة رأس تنورة, Ras Tanura Refinery, محطة شدقم, SHEDGUM GOSP-4, آيزو 9001:2015, ISO 9001:2015, توف نورد, TÜV NORD CERT, 1980 يوم صفر حوادث, 1980 days zero accident, 1.2 مليار ريال, SAR 1.2 billion, السجل التجاري, Commercial Registration, CR-1010251168, الفحص غير المدمر, NDT, RT, MT, PT, UT, API Inspector, T&I Shutdown, Pipeline Services',
+  title = 'مكامن السعودية القابضة - شركة خدمات النفط والغاز برأس مال 1.2 مليار ريال',
+  description = 'شركة مكامن السعودية القابضة لخدمات النفط والغاز برأس مال 1.2 مليار ريال سعودي. خدمات بترولية وبحرية متكاملة، شراكات مع أرامكو السعودية، مصفاة رأس تنورة، محطة شدقم. شهادات آيزو 9001:2015 دولية، سجل سلامة 1980 يوم صفر حوادث. خبرة منذ عام 2008 في قطاع الطاقة السعودي.',
+  keywords = 'مكامن السعودية القابضة, Saudi Makamin Holding Company, مكامن أوف شور, Makamin Offshore Saudi, مكامن للخدمات البترولية, Makamin Petroleum Services, أرامكو السعودية, Saudi Aramco, مصفاة رأس تنورة, Ras Tanura Refinery, محطة شدقم, SHEDGUM GOSP-4, آيزو 9001:2015, ISO 9001:2015, توف نورد, TÜV NORD CERT, 1980 يوم صفر حوادث, 1980 days zero accident, 1.2 مليار ريال, SAR 1.2 billion, السجل التجاري, Commercial Registration, CR-1010251168, الفحص غير المدمر, NDT, RT, MT, PT, UT, API Inspector, T&I Shutdown, Pipeline Services, شركة خدمات النفط والغاز, Oil and Gas Services Company, خدمات الطاقة, Energy Services, رؤية 2030, Vision 2030, قطاع الطاقة السعودي, Saudi Energy Sector',
   canonicalUrl
 }: SEOHeadTagsProps) {
   
@@ -92,34 +92,26 @@ export default function SEOHeadTags({
             "email": "info@makamin.com.sa",
             "contactType": "customer service"
           },
-          "employee": [
+          "department": [
             {
-              "@type": "Person",
-              "name": "Adel Ayed ALNOOB",
-              "alternateName": ["عادل عايض النوب", "Adel Ayed Al-Noub"],
-              "jobTitle": "Chief Executive Officer",
-              "worksFor": { "@id": "https://makamin.com.sa/#organization" }
+              "@type": "Organization",
+              "name": "Executive Management Department",
+              "parentOrganization": { "@id": "https://makamin.com.sa/#organization" }
             },
             {
-              "@type": "Person",
-              "name": "Ali Al-Braidi",
-              "alternateName": ["علي البريدي", "Ali Al-Bureidi"],
-              "jobTitle": "Offshore Operations Manager",
-              "worksFor": { "@id": "https://makamin.com.sa/#organization" }
+              "@type": "Organization",
+              "name": "Offshore Operations Department",
+              "parentOrganization": { "@id": "https://makamin.com.sa/#organization" }
             },
             {
-              "@type": "Person",
-              "name": "Ahmed Al-Faleh",
-              "alternateName": ["أحمد الفالح"],
-              "jobTitle": "Offshore Operations Manager",
-              "worksFor": { "@id": "https://makamin.com.sa/#organization" }
+              "@type": "Organization",
+              "name": "Petroleum Services Department",
+              "parentOrganization": { "@id": "https://makamin.com.sa/#organization" }
             },
             {
-              "@type": "Person",
-              "name": "Othman Fadel Al-Mousa",
-              "alternateName": ["عثمان فاضل الموسى"],
-              "jobTitle": "Chairman of the Board",
-              "worksFor": { "@id": "https://makamin.com.sa/#organization" }
+              "@type": "Organization",
+              "name": "Board of Directors",
+              "parentOrganization": { "@id": "https://makamin.com.sa/#organization" }
             }
           ],
           "hasCredential": [

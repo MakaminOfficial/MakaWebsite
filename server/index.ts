@@ -1,7 +1,6 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
-import seoRoutes from "./routes/seo";
 
 const app = express();
 app.use(express.json());
@@ -38,9 +37,6 @@ app.use((req, res, next) => {
 });
 
 (async () => {
-  // Add SEO routes
-  app.use(seoRoutes);
-  
   const server = await registerRoutes(app);
 
   // Serve static assets from attached_assets folder

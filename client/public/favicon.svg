@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="background: linear-gradient(135deg, #c5a66e 0%, #8b7355 100%);">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4f1eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c5a66e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Company symbol representing oil & gas -->
+  <circle cx="50" cy="35" r="12" fill="url(#logoGradient)" stroke="#2d3748" stroke-width="2"/>
+  
+  <!-- Arabic letter "م" stylized -->
+  <path d="M25 55 L35 45 L45 55 L55 45 L65 55 L75 50" 
+        stroke="url(#logoGradient)" 
+        stroke-width="4" 
+        fill="none" 
+        stroke-linecap="round"/>
+  
+  <!-- Company name in Arabic -->
+  <text x="50" y="80" 
+        font-family="Arial, sans-serif" 
+        font-size="12" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="url(#logoGradient)">مكامن</text>
+</svg>
