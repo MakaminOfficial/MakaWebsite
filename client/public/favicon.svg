@@ -1,26 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="background: linear-gradient(135deg, #c5a66e 0%, #8b7355 100%);">
-  <defs>
-    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f4f1eb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#c5a66e;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Company symbol representing oil & gas -->
-  <circle cx="50" cy="35" r="12" fill="url(#logoGradient)" stroke="#2d3748" stroke-width="2"/>
-  
-  <!-- Arabic letter "م" stylized -->
-  <path d="M25 55 L35 45 L45 55 L55 45 L65 55 L75 50" 
-        stroke="url(#logoGradient)" 
-        stroke-width="4" 
-        fill="none" 
-        stroke-linecap="round"/>
-  
-  <!-- Company name in Arabic -->
-  <text x="50" y="80" 
-        font-family="Arial, sans-serif" 
-        font-size="12" 
-        font-weight="bold" 
-        text-anchor="middle" 
-        fill="url(#logoGradient)">مكامن</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#ffffff"/>
+  <!-- Makamin Logo Elements -->
+  <g transform="translate(80, 180) scale(0.8)">
+    <!-- Arabic Text: مكامن -->
+    <path fill="#2563eb" d="M60 80 Q50 70 40 80 L40 120 Q40 130 50 130 L70 130 Q80 130 80 120 L80 80 Q80 70 70 80 Z"/>
+    <path fill="#2563eb" d="M100 80 Q90 70 80 80 L80 120 Q80 130 90 130 L110 130 Q120 130 120 120 L120 80 Q120 70 110 80 Z"/>
+    <path fill="#2563eb" d="M140 80 Q130 70 120 80 L120 120 Q120 130 130 130 L150 130 Q160 130 160 120 L160 80 Q160 70 150 80 Z"/>
+    <path fill="#2563eb" d="M180 80 Q170 70 160 80 L160 120 Q160 130 170 130 L190 130 Q200 130 200 120 L200 80 Q200 70 190 80 Z"/>
+    <path fill="#2563eb" d="M220 80 Q210 70 200 80 L200 120 Q200 130 210 130 L230 130 Q240 130 240 120 L240 80 Q240 70 230 80 Z"/>
+    
+    <!-- English Text: Makamin -->
+    <text x="60" y="180" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#6b7280">Makamin</text>
+    
+    <!-- Wind/Energy Symbol -->
+    <g transform="translate(280, 40)">
+      <path fill="#3b82f6" d="M0 20 Q10 0 20 20 Q30 40 40 20 Q50 0 60 20 Q70 40 80 20" stroke="#2563eb" stroke-width="2"/>
+      <path fill="#60a5fa" d="M0 40 Q10 20 20 40 Q30 60 40 40 Q50 20 60 40 Q70 60 80 40" stroke="#3b82f6" stroke-width="2"/>
+      <path fill="#93c5fd" d="M0 60 Q10 40 20 60 Q30 80 40 60 Q50 40 60 60 Q70 80 80 60" stroke="#60a5fa" stroke-width="2"/>
+      <path fill="#bfdbfe" d="M0 80 Q10 60 20 80 Q30 100 40 80 Q50 60 60 80 Q70 100 80 80" stroke="#93c5fd" stroke-width="2"/>
+      <path fill="#dbeafe" d="M0 100 Q10 80 20 100 Q30 120 40 100 Q50 80 60 100 Q70 120 80 100" stroke="#bfdbfe" stroke-width="2"/>
+    </g>
+  </g>
 </svg>
