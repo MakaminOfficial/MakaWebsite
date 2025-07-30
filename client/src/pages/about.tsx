@@ -130,7 +130,7 @@ export default function About() {
   // Executive Leadership Data - Strategic Rewrite
   const leadership = {
     ceo: {
-      name: language === 'ar' ? 'الإدارة التنفيذية' : 'Executive Management',
+      name: language === 'ar' ? 'الأستاذ عادل عايض النوب' : 'Mr. Adel Ayed ALNOOB',
       title: language === 'ar' ? 'الرئيس التنفيذي - تم تعيينه بقرار الجمعية العمومية (2025)' : 'Chief Executive Officer – Appointed by General Assembly Decision (2025)',
       subtitle: language === 'ar' ? 'عضو مجلس الإدارة • الممثل النظامي المعتمد بحكم قضائي' : 'Board Member • Legally Authorized Representative by Judicial Decree',
       photo: '/attached_assets/ADEL AYED ALNOOB_1752885031070.jpg',
@@ -151,12 +151,12 @@ export default function About() {
         'Elected by majority vote of attending shareholders representing 29.5% of authorized capital',
       members: [
         { name: language === 'ar' ? 'م. عثمان فاضل الموسى' : 'Eng. Othman Fadel Al-Mousa', role: language === 'ar' ? 'رئيس مجلس الإدارة' : 'Chairman of the Board' },
-        { name: language === 'ar' ? 'نائب رئيس مجلس الإدارة' : 'Vice Chairman of the Board', role: language === 'ar' ? 'نائب رئيس مجلس الإدارة' : 'Vice Chairman of the Board' },
+        { name: language === 'ar' ? 'م. إبراهيم أحمد الغامدي' : 'Eng. Ibrahim Ahmed Al-Ghamdi', role: language === 'ar' ? 'نائب رئيس مجلس الإدارة' : 'Vice Chairman of the Board' },
         { name: language === 'ar' ? 'د. إبراهيم عبدالله الجلال' : 'Dr. Ibrahim Abdullah Al-Jalal', role: language === 'ar' ? 'رئيس اللجنة التنفيذية' : 'Executive Committee Chairman' },
         { name: language === 'ar' ? 'م. خالد حمدان السيف' : 'Eng. Khalid Hamdan Al-Saif', role: language === 'ar' ? 'عضو مجلس الإدارة' : 'Board Member' },
-        { name: language === 'ar' ? 'عضو مجلس الإدارة' : 'Board Member', role: language === 'ar' ? 'عضو مجلس الإدارة' : 'Board Member' },
+        { name: language === 'ar' ? 'م. حمد علي القحطاني' : 'Eng. Hamad Ali Al-Qahtani', role: language === 'ar' ? 'عضو مجلس الإدارة' : 'Board Member' },
         { name: language === 'ar' ? 'م. محمد جاسم الفواز' : 'Eng. Mohammed Jasim Al-Fawaz', role: language === 'ar' ? 'عضو مجلس الإدارة' : 'Board Member' },
-        { name: language === 'ar' ? 'الرئيس التنفيذي' : 'Chief Executive Officer', role: language === 'ar' ? 'الرئيس التنفيذي وعضو مجلس الإدارة' : 'CEO and Board Member' }
+        { name: language === 'ar' ? 'أ. عادل عايض النوب' : 'Mr. Adel Ayed ALNOOB', role: language === 'ar' ? 'الرئيس التنفيذي وعضو مجلس الإدارة' : 'CEO and Board Member' }
       ]
     },
     committees: {
@@ -632,7 +632,7 @@ export default function About() {
                   <div key={i} className="flex items-center gap-3 p-3 bg-slate-800/30 rounded-xl hover:bg-slate-700/50 transition-colors">
                     <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-slate-600">
                       {/* CEO - Adel Ayed ALNOOB */}
-                      {(member.name.includes('الإدارة التنفيذية') || member.name.includes('Executive Management') || member.name.includes('الرئيس التنفيذي') || member.name.includes('Chief Executive Officer')) && (
+                      {(member.name.includes('عادل عايض النوب') || member.name.includes('Adel Ayed ALNOOB')) && (
                         <img 
                           src="/attached_assets/ADEL AYED ALNOOB_1752885031070.jpg"
                           alt={member.name}
@@ -657,7 +657,7 @@ export default function About() {
                         />
                       )}
                       {/* Vice Chairman - Ibrahim Ahmed Sabti Al-Ghamdi */}
-                      {(member.name.includes('نائب رئيس مجلس الإدارة') || member.name.includes('Vice Chairman of the Board')) && (
+                      {(member.name.includes('إبراهيم أحمد الغامدي') || member.name.includes('Ibrahim Ahmed Al-Ghamdi') || member.name.includes('Ibrahim Ahmed Sabti')) && (
                         <img 
                           src="/attached_assets/Ibrahim Ahmed Sabti Alghamdi_1752784084513.png"
                           alt={member.name}
@@ -681,7 +681,7 @@ export default function About() {
                         />
                       )}
                       {/* Board Member - Hamad Ali Al-Qahtani */}
-                      {(member.name.includes('عضو مجلس الإدارة') || member.name.includes('Board Member')) && (
+                      {(member.name.includes('حمد علي القحطاني') || member.name.includes('Hamad Ali Al-Qahtani')) && (
                         <img 
                           src="/attached_assets/HamadAlQahtani_1752784084512.png"
                           alt={member.name}
@@ -1085,7 +1085,7 @@ export default function About() {
                     />
                     <div>
                       <h4 className="text-md font-bold text-white">
-                        {language === 'ar' ? 'رئيس لجنة المراجعة' : 'Chairman of Audit Committee'}
+                        {language === 'ar' ? 'م. إبراهيم أحمد صبتي الغامدي' : 'Eng. Ibrahim Ahmed Sabti Alghamdi'}
                       </h4>
                       <p className="text-red-400 text-xs">
                         {language === 'ar' ? 'خبير الحفر المخضرم – رائد البحرية – حامل البراءة' : 'Veteran Drilling Expert – Offshore Pioneer – Patent Holder'}

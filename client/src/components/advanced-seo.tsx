@@ -106,8 +106,8 @@ function getPageSpecificOG(location: string): Record<string, string> {
     case '/about':
       return {
         ...baseOG,
-        'og:title': 'عن مكامن السعودية القابضة - تاريخ الشركة وقيادتها',
-        'og:description': 'تعرف على تاريخ شركة مكامن منذ 2008، فريق القيادة التنفيذي، مجلس الإدارة، رؤية الشركة في قطاع النفط والغاز.',
+        'og:title': 'عن شركة مكامن السعودية القابضة - خدمات النفط والغاز',
+        'og:description': 'شركة مكامن السعودية القابضة لخدمات النفط والغاز برأس مال 1.2 مليار ريال. تاريخ عريق منذ 2008 في قطاع الطاقة السعودي مع شراكات أرامكو.',
         'og:url': 'https://makamin.com.sa/about',
         'article:section': 'About Company'
       };
