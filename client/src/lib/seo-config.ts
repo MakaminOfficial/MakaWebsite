@@ -54,7 +54,7 @@ export const pagesSEO: Record<string, SEOConfig> = {
   },
   "/about": {
     title: "عن مكامن السعودية القابضة - تاريخ الشركة وقيادتها | Oil & Gas Services",
-    description: "تعرف على تاريخ شركة مكامن السعودية القابضة منذ التأسيس عام 2008. فريق القيادة التنفيذي، مجلس الإدارة، اللجان المتخصصة، رؤية الشركة ورسالتها في قطاع خدمات النفط والغاز السعودي.",
+    description: "Saudi Makamin Holding Company - About Us | Oil & Gas Services since 2008 | SAR 1.2 Billion Capital | Executive Leadership",
     keywords: baseSEO.keywords + "، عن الشركة، About Us، تاريخ مكامن، مجلس الإدارة، القيادة التنفيذية، Board of Directors",
     canonicalUrl: "https://makamin.com.sa/about"
   },
