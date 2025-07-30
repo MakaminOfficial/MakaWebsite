@@ -99,7 +99,7 @@ function getPageSpecificOG(location: string): Record<string, string> {
       return {
         ...baseOG,
         'og:title': 'مكامن السعودية القابضة - الصفحة الرئيسية | شركة خدمات النفط والغاز',
-        'og:description': 'شركة مكامن السعودية القابضة لخدمات النفط والغاز برأس مال 1.2 مليار ريال. شراكات مع أرامكو، سجل سلامة 1980 يوم صفر حوادث.',
+        'og:description': 'Saudi Makamin Holding Company - Oil & Gas Services | SAR 1.2 Billion Capital | Aramco Partnership',
         'og:url': 'https://makamin.com.sa/',
         'article:section': 'Homepage'
       };
@@ -107,7 +107,7 @@ function getPageSpecificOG(location: string): Record<string, string> {
       return {
         ...baseOG,
         'og:title': 'عن شركة مكامن السعودية القابضة - خدمات النفط والغاز',
-        'og:description': 'شركة مكامن السعودية القابضة لخدمات النفط والغاز برأس مال 1.2 مليار ريال. تاريخ عريق منذ 2008 في قطاع الطاقة السعودي مع شراكات أرامكو.',
+        'og:description': 'Saudi Makamin Holding Company - About Us | Oil & Gas Services since 2008 | Aramco Partnerships',
         'og:url': 'https://makamin.com.sa/about',
         'article:section': 'About Company'
       };
