@@ -63,6 +63,11 @@ app.use((req, res, next) => {
     res.sendFile('client/public/manifest.json', { root: process.cwd() });
   });
   
+  // Serve special sharing page with clean meta tags
+  app.get('/makamin-share.html', (req, res) => {
+    res.sendFile('makamin-share.html', { root: process.cwd() });
+  });
+  
   app.get('/browserconfig.xml', (req, res) => {
     res.setHeader('Content-Type', 'application/xml');
     res.sendFile('client/public/browserconfig.xml', { root: process.cwd() });
