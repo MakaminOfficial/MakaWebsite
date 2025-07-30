@@ -84,6 +84,15 @@ app.use((req, res, next) => {
     res.sendFile('client/public/google-site-verification.html', { root: process.cwd() });
   });
   
+  // Social banner with Makamin logo
+  app.get('/images/makamin-social-banner.svg', (req, res) => {
+    res.setHeader('Content-Type', 'image/svg+xml');
+    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
+    res.sendFile('client/public/images/makamin-social-banner.svg', { root: process.cwd() });
+  });
+  
   // OG banner with proper headers and cache busting
   app.get('/images/og-banner.svg', (req, res) => {
     res.setHeader('Content-Type', 'image/svg+xml');
@@ -99,8 +108,8 @@ app.use((req, res, next) => {
     res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
     res.setHeader('Pragma', 'no-cache');
     res.setHeader('Expires', '0');
-    // Serve authentic Makamin logo
-    res.sendFile('attached_assets/logo_makamin_clean_1752524503536.png', { root: process.cwd() });
+    // Serve newest Makamin logo
+    res.sendFile('attached_assets/878B2BA1-7AE2-4530-96FD-4769905905A3_1753908213695.png', { root: process.cwd() });
   });
   
   // Serve attached assets directory

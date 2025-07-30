@@ -46,7 +46,7 @@ export default function SocialMediaDebugger() {
   };
 
   const siteUrl = 'https://makamin.com.sa';
-  const ogImageUrl = 'https://makamin.com.sa/images/og-banner.png?v=authentic-makamin-logo';
+  const ogImageUrl = 'https://makamin.com.sa/attached_assets/878B2BA1-7AE2-4530-96FD-4769905905A3_1753908213695.png?v=new-makamin-logo';
 
   if (!isVisible) {
     return (
