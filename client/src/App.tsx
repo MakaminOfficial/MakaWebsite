@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { SEOPerformanceOptimizer } from '@/lib/seo-performance';
 import { Switch, Route } from 'wouter';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { queryClient } from './lib/queryClient';
@@ -6,6 +7,9 @@ import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { LanguageProvider } from '@/components/language-provider';
 import SEOHeadTags from '@/components/SEOHeadTags';
+import { SEOHead } from '@/components/seo-head';
+import { AdvancedSEO } from '@/components/advanced-seo';
+import { SEOTestConsole } from '@/components/seo-test-console';
 import SplashScreen from '@/components/splash-screen';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
@@ -63,6 +67,11 @@ function Router() {
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
+  
+  // Initialize SEO performance optimizations
+  useEffect(() => {
+    SEOPerformanceOptimizer.initialize();
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -74,12 +83,15 @@ function App() {
             ) : (
               <div className="min-h-screen">
                 <SEOHeadTags />
+                <SEOHead />
+                <AdvancedSEO />
                 <Header />
                 <main>
                   <Router />
                 </main>
                 <Footer />
                 <AiAssistant />
+                <SEOTestConsole />
                 {/* Shadow systems disabled for clean news implementation */}
               </div>
             )}

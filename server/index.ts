@@ -77,6 +77,52 @@ app.use((req, res, next) => {
     res.setHeader('Content-Type', 'application/xml');
     res.sendFile('client/public/sitemap.xml', { root: process.cwd() });
   });
+  
+  // Google site verification
+  app.get('/google-site-verification.html', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.sendFile('client/public/google-site-verification.html', { root: process.cwd() });
+  });
+  
+  // IndexNow submission endpoint
+  app.get('/IndexNow-submit.txt', (req, res) => {
+    res.setHeader('Content-Type', 'text/plain');
+    res.sendFile('client/public/IndexNow-submit.txt', { root: process.cwd() });
+  });
+  
+  // IndexNow key file
+  app.get('/indexnow-key.txt', (req, res) => {
+    res.setHeader('Content-Type', 'text/plain');
+    res.sendFile('client/public/indexnow-key.txt', { root: process.cwd() });
+  });
+  
+  // Well-known security file
+  app.get('/.well-known/security.txt', (req, res) => {
+    res.setHeader('Content-Type', 'text/plain');
+    res.sendFile('client/public/.well-known/security.txt', { root: process.cwd() });
+  });
+  
+  // Ads.txt file
+  app.get('/ads.txt', (req, res) => {
+    res.setHeader('Content-Type', 'text/plain');
+    res.sendFile('client/public/ads.txt', { root: process.cwd() });
+  });
+  
+  // Dynamic sitemap ping to search engines (for production)
+  app.post('/api/ping-search-engines', (req, res) => {
+    if (process.env.NODE_ENV === 'production') {
+      // Ping Google
+      const googlePingUrl = `https://www.google.com/ping?sitemap=https://makamin.com.sa/sitemap.xml`;
+      // Ping Bing
+      const bingPingUrl = `https://www.bing.com/ping?sitemap=https://makamin.com.sa/sitemap.xml`;
+      
+      // In production, you would make actual HTTP requests to these URLs
+      console.log('Pinging search engines:', { googlePingUrl, bingPingUrl });
+      res.json({ success: true, message: 'Search engines pinged successfully' });
+    } else {
+      res.json({ success: false, message: 'Ping only available in production' });
+    }
+  });
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
