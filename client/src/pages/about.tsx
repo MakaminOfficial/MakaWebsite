@@ -150,13 +150,12 @@ export default function About() {
         'تم انتخابهم بأغلبية أصوات المساهمين الحاضرين والذين يمثلون 29.5% من رأس المال المصرح به' :
         'Elected by majority vote of attending shareholders representing 29.5% of authorized capital',
       members: [
-        { name: language === 'ar' ? 'م. عثمان فاضل الموسى' : 'Eng. Othman Fadel Al-Mousa', role: language === 'ar' ? 'رئيس مجلس الإدارة' : 'Chairman of the Board' },
+        { name: language === 'ar' ? 'أ. عادل عايض النوب' : 'Mr. Adel Ayed ALNOOB', role: language === 'ar' ? 'رئيس مجلس الإدارة والرئيس التنفيذي' : 'Chairman of the Board and CEO' },
         { name: language === 'ar' ? 'م. إبراهيم أحمد الغامدي' : 'Eng. Ibrahim Ahmed Al-Ghamdi', role: language === 'ar' ? 'نائب رئيس مجلس الإدارة' : 'Vice Chairman of the Board' },
-        { name: language === 'ar' ? 'د. إبراهيم عبدالله الجلال' : 'Dr. Ibrahim Abdullah Al-Jalal', role: language === 'ar' ? 'رئيس اللجنة التنفيذية' : 'Executive Committee Chairman' },
+        { name: language === 'ar' ? 'م. عثمان فاضل الموسى' : 'Eng. Othman Fadel Al-Mousa', role: language === 'ar' ? 'عضو مجلس الإدارة' : 'Board Member' },
         { name: language === 'ar' ? 'م. خالد حمدان السيف' : 'Eng. Khalid Hamdan Al-Saif', role: language === 'ar' ? 'عضو مجلس الإدارة' : 'Board Member' },
         { name: language === 'ar' ? 'م. حمد علي القحطاني' : 'Eng. Hamad Ali Al-Qahtani', role: language === 'ar' ? 'عضو مجلس الإدارة' : 'Board Member' },
-        { name: language === 'ar' ? 'م. محمد جاسم الفواز' : 'Eng. Mohammed Jasim Al-Fawaz', role: language === 'ar' ? 'عضو مجلس الإدارة' : 'Board Member' },
-        { name: language === 'ar' ? 'أ. عادل عايض النوب' : 'Mr. Adel Ayed ALNOOB', role: language === 'ar' ? 'الرئيس التنفيذي وعضو مجلس الإدارة' : 'CEO and Board Member' }
+        { name: language === 'ar' ? 'م. محمد جاسم الفواز' : 'Eng. Mohammed Jasim Al-Fawaz', role: language === 'ar' ? 'عضو مجلس الإدارة' : 'Board Member' }
       ]
     },
     committees: {
@@ -164,7 +163,7 @@ export default function About() {
       list: [
         {
           name: language === 'ar' ? 'اللجنة التنفيذية' : 'Executive Committee',
-          head: language === 'ar' ? 'رئيس: د. إبراهيم عبدالله الجلال' : 'Chairman: Dr. Ibrahim Abdullah Al-Jalal',
+          head: language === 'ar' ? 'رئيس: أ. عادل عايض النوب' : 'Chairman: Mr. Adel Ayed ALNOOB',
           description: language === 'ar' ? 'إعداد خارطة الطريق القانونية والإدارية والتشغيلية لمرحلة ما بعد انتخابات 2025' : 'Preparing legal, administrative, and operational roadmap for post-2025 election phase'
         },
         {
@@ -809,75 +808,7 @@ export default function About() {
           </motion.div>
 
           <div className="space-y-16">
-            {/* Audit Committee */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 shadow-2xl border border-slate-700 committee"
-              data-committee="audit"
-            >
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full flex items-center justify-center">
-                  <Shield className="w-8 h-8 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-3xl font-bold text-white">
-                    {language === 'ar' ? 'لجنة التدقيق' : 'Audit Committee'}
-                  </h3>
-                  <p className="text-emerald-400 font-semibold">
-                    {language === 'ar' ? 'رئيس: د. إبراهيم عبدالله الجلال' : 'Chairman: Dr. Ibrahim Abdullah Al-Jallal'}
-                  </p>
-                </div>
-              </div>
-              
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="md:col-span-1">
-                  <div className="bg-slate-800/50 rounded-2xl p-6 text-center">
-                    <motion.img 
-                      src="/attached_assets/Ibrahim Abdullah Al-Jallal_1752784084513.png" 
-                      alt="Dr. Ibrahim Abdullah Al-Jallal"
-                      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-emerald-500 shadow-2xl hover:shadow-emerald-500/60 transition-all duration-500"
-                      whileHover={{ scale: 1.08, rotate: 2 }}
-                      loading="lazy"
-                      onError={(e) => {
-                        e.currentTarget.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' viewBox='0 0 24 24' fill='none' stroke='%23059669' stroke-width='2'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E";
-                      }}
-                    />
-                    <h4 className="text-lg font-bold text-white mb-2">
-                      {language === 'ar' ? 'د. إبراهيم عبدالله الجلال' : 'Dr. Ibrahim Abdullah Al-Jallal'}
-                    </h4>
-                    <p className="text-emerald-400 text-sm font-semibold mb-3">
-                      {language === 'ar' ? 'سلطة علوم الأرض – استراتيجي المكامن – مستشار دول الطاقة الخليجية' : 'Geoscience Authority – Reservoir Strategist – Gulf Energy States Advisor'}
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="md:col-span-2">
-                  <p className="text-slate-300 leading-relaxed text-sm mb-4">
-                    {language === 'ar' ? 
-                      'د. إبراهيم الجلال شخصية بارزة في علوم الأرض الخليجية، مع أكثر من أربعة عقود من التميز في جيولوجيا البترول ونمذجة المكامن والاستشارات الاستراتيجية للطاقة. مسلح بدكتوراه من إمبريال كوليدج لندن، وماجستير من جامعة ويسترن ميشيغان، وبكالوريوس في الجيولوجيا والكيمياء من جامعة الملك سعود، سجله الأكاديمي والتقني لا يضاهى.' :
-                      'Dr. Ibrahim Al-Jallal is a towering figure in Gulf geoscience, with over four decades of distinction in petroleum geology, reservoir modeling, and strategic energy consultancy. Armed with a PhD from Imperial College London, an MSc from Western Michigan University, and a BSc in Geology and Chemistry from King Saud University, his academic and technical pedigree is unmatched.'
-                    }
-                  </p>
-                  <p className="text-slate-300 leading-relaxed text-sm mb-4">
-                    {language === 'ar' ? 
-                      'قضى 25 عاماً في أرامكو السعودية، حيث شغل منصب كبير الجيولوجيين للحقول الجنوبية - بما في ذلك حقل الغوار، الأكبر في العالم - وكبير الجيولوجيين للبحث والتطوير، قائداً مشاريع تحويلية في حماية المكامن والرقمنة ونماذج التنبؤ الحقلي عبر تشكيلات الخف والجوف.' :
-                      'Spending 25 years at Saudi Aramco, he served as Chief Geologist of Southern Fields—including the Ghawar Field, the world\'s largest—and Chief Geologist for R&D, leading transformational projects in reservoir protection, digitization, and field prediction models across the Khuff and Jauf formations.'
-                    }
-                  </p>
-                  <div className="bg-slate-800/30 rounded-xl p-4">
-                    <p className="text-slate-400 text-xs">
-                      {language === 'ar' ? 
-                        'أسس ورأس مؤتمر جيو البترول (منذ 1994) وورشة عمل مكمن الخف، مؤسساً حواراً حيوياً عبر دول مجلس التعاون الخليجي والمشغلين الدوليين. عمله مع بابكو والكويت والبحرين تضمن استشارات حول أهداف الغاز العميق واستراتيجيات مكمن الخف باستخدام أطالس مخصصة ومراقبة رباعية الأبعاد. • 3 خبراء مستقلين (غير مسماة)' :
-                        'He founded and chaired the GEO Petroleum Conference (since 1994) and the Khuff Reservoir Workshop, establishing critical dialogue across GCC nations and international operators. His work with Babco, Kuwait, and Bahrain included consultancy on deep gas targets and Khuff reservoir strategies using custom atlases and 4D monitoring. • 3 Independent Experts (unnamed)'
-                      }
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+
 
             {/* Executive Committee */}
             <motion.div
