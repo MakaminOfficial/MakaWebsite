@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, ArrowRight, Star, TrendingUp, Globe, Award, Play, Clock, Eye } from 'lucide-react';
+import { Calendar, ArrowRight, Star, TrendingUp, Globe, Award, Play, Eye } from 'lucide-react';
 import { useLanguageContext } from '@/components/language-provider';
 import HeroLogo from '@/components/hero-logo';
 
@@ -238,8 +238,12 @@ export default function NewsCenter() {
                   <Calendar className="w-4 h-4 mr-2" />
                   <span>{language === 'ar' ? featuredNews.dateAr : featuredNews.date}</span>
                   <span className="mx-2">•</span>
-                  <Clock className="w-4 h-4 mr-1" />
-                  <span>{language === 'ar' ? featuredNews.readTimeAr : featuredNews.readTime}</span>
+                  <div className="relative group">
+                    <div className="w-3 h-3 rounded-full bg-gradient-to-r from-red-500 to-red-600 animate-pulse-indicator shadow-lg shadow-red-500/50 cursor-pointer"></div>
+                    <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50">
+                      الخبر حي – قيد التحديث
+                    </div>
+                  </div>
                 </div>
 
                 <h3 className="text-3xl font-bold text-white mb-4 leading-tight">
@@ -279,10 +283,16 @@ export default function NewsCenter() {
                 transition={{ delay: index * 0.2 }}
                 className="flex items-center bg-slate-800/50 rounded-xl p-4 backdrop-blur border border-slate-700/50 hover:border-cyan-500/50 transition-colors"
               >
-                <div className={`w-3 h-3 rounded-full mr-4 ${
-                  update.status === 'live' ? 'bg-red-500 animate-pulse' :
-                  update.status === 'recent' ? 'bg-yellow-500' : 'bg-green-500'
-                }`}></div>
+                <div className="relative group mr-4">
+                  <div className={`w-3 h-3 rounded-full shadow-lg cursor-pointer ${
+                    update.status === 'live' ? 'bg-gradient-to-r from-red-500 to-red-600 animate-pulse-indicator shadow-red-500/50' :
+                    update.status === 'recent' ? 'bg-gradient-to-r from-yellow-500 to-yellow-600 animate-pulse-indicator shadow-yellow-500/50' : 
+                    'bg-gradient-to-r from-green-500 to-green-600 animate-pulse-indicator shadow-green-500/50'
+                  }`}></div>
+                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50">
+                    الخبر حي – قيد التحديث
+                  </div>
+                </div>
                 
                 <div className="flex-1">
                   <h4 className="text-white font-semibold">

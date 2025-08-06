@@ -481,9 +481,12 @@ export default function NewsEnhanced() {
                         {formatDate(featuredArticle.date)}
                       </span>
                       <span className="text-slate-500">•</span>
-                      <span className="text-slate-400 text-sm">
-                        {language === 'ar' ? featuredArticle.readTimeAr : featuredArticle.readTime}
-                      </span>
+                      <div className="relative group">
+                        <div className="w-3 h-3 rounded-full bg-gradient-to-r from-red-500 to-red-600 animate-pulse-indicator shadow-lg shadow-red-500/50 cursor-pointer"></div>
+                        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50">
+                          الخبر حي – قيد التحديث
+                        </div>
+                      </div>
                     </div>
                     
                     <h1 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
@@ -663,8 +666,11 @@ export default function NewsEnhanced() {
                         <User className="w-3 h-3" />
                         {language === 'ar' ? article.authorAr : article.author}
                       </div>
-                      <div>
-                        {language === 'ar' ? article.readTimeAr : article.readTime}
+                      <div className="relative group">
+                        <div className="w-3 h-3 rounded-full bg-gradient-to-r from-green-500 to-green-600 animate-pulse-indicator shadow-lg shadow-green-500/50 cursor-pointer"></div>
+                        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50">
+                          الخبر حي – قيد التحديث
+                        </div>
                       </div>
                     </div>
                     

@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button';
 import { 
   Building2, 
   Calendar, 
-  Clock, 
   MapPin, 
   Star, 
   Newspaper,
@@ -205,8 +204,13 @@ export default function NewsPremium() {
               <Calendar className="w-4 h-4" />
               <span>{language === 'ar' ? 'محدث يومياً' : 'Updated Daily'}</span>
               <span className="mx-2">•</span>
-              <Clock className="w-4 h-4" />
-              <span>{language === 'ar' ? 'تغطية شاملة' : 'Comprehensive Coverage'}</span>
+              <div className="relative group flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full bg-gradient-to-r from-green-500 to-green-600 animate-pulse-indicator shadow-lg shadow-green-500/50 cursor-pointer"></div>
+                <span>{language === 'ar' ? 'تغطية شاملة' : 'Comprehensive Coverage'}</span>
+                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50">
+                  الخبر حي – قيد التحديث
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -352,9 +356,11 @@ export default function NewsPremium() {
                             <MapPin className="w-4 h-4" />
                             {language === 'ar' ? news.location : news.locationEn}
                           </div>
-                          <div className="flex items-center gap-1">
-                            <Clock className="w-4 h-4" />
-                            {language === 'ar' ? news.readTime : news.readTimeEn}
+                          <div className="relative group">
+                            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-red-500 to-red-600 animate-pulse-indicator shadow-lg shadow-red-500/50 cursor-pointer"></div>
+                            <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50">
+                              الخبر حي – قيد التحديث
+                            </div>
                           </div>
                         </div>
                         
