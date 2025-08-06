@@ -9,18 +9,18 @@ export default function NewsCenter() {
   const { language } = useLanguageContext();
 
   const featuredNews = {
-    title: "Makamin Strategic Partnership with Aerodyne Malaysia",
-    titleAr: "شراكة مكامن الاستراتيجية مع إيرودين ماليزيا",
-    content: "Historic signing ceremony establishing revolutionary offshore operations partnership, setting new maritime excellence standards in the Arabian Gulf.",
-    contentAr: "حفل توقيع تاريخي لإنشاء شراكة ثورية في العمليات البحرية، وإرساء معايير جديدة للتميز البحري في الخليج العربي.",
-    image: "/images/news-control-room.png",
-    category: "Strategic Partnership",
-    categoryAr: "شراكة استراتيجية",
-    date: "January 19, 2025",
-    dateAr: "19 يناير 2025",
-    priority: "breaking",
-    readTime: "5 min read",
-    readTimeAr: "5 دقائق قراءة"
+    title: "Extraordinary General Assembly Meeting - Corporate Governance",
+    titleAr: "دعوة لحضور اجتماع الجمعية العمومية غير العادية",
+    content: "Saudi Makamin Holding Company invites shareholders to attend the Extraordinary General Assembly Meeting on Saturday, August 23, 2025, at 12:00 PM in Riyadh - Sulaimaniyah District.",
+    contentAr: "شركة مكامن السعودية القابضة لخدمات النفط والغاز تدعو السادة المساهمين الكرام لحضور اجتماع الجمعية العمومية غير العادية يوم السبت الموافق 23/08/2025م في تمام الساعة 12:00 ظهرًا بمدينة الرياض.",
+    image: "/attached_assets/لقطة الشاشة 2025-07-21 172931_1754473884923.jpg",
+    category: "Corporate Governance Announcement",
+    categoryAr: "إعلان حوكمة مؤسسية",
+    date: "August 01, 2025",
+    dateAr: "1 أغسطس 2025",
+    priority: "pinned",
+    readTime: "8 min read",
+    readTimeAr: "8 دقائق قراءة"
   };
 
   const liveUpdates = [
@@ -222,8 +222,8 @@ export default function NewsCenter() {
                   className="w-full h-80 object-cover"
                 />
                 <div className="absolute top-4 left-4">
-                  <Badge className="bg-red-600 text-white px-4 py-2 font-bold animate-pulse">
-                    🔴 {language === 'ar' ? 'عاجل' : 'BREAKING'}
+                  <Badge className="bg-blue-600 text-white px-4 py-2 font-bold">
+                    📌 {language === 'ar' ? 'مثبت' : 'PINNED'}
                   </Badge>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
@@ -250,10 +250,10 @@ export default function NewsCenter() {
                   {language === 'ar' ? featuredNews.contentAr : featuredNews.content}
                 </p>
 
-                <button className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-flex items-center group">
-                  {language === 'ar' ? 'قراءة التفاصيل الكاملة' : 'Read Full Coverage'}
+                <a href="/news/extraordinary-general-assembly-2025" className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-flex items-center group">
+                  {language === 'ar' ? 'قراءة النص الكامل للدعوة' : 'Read Full Invitation'}
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </CardContent>
             </Card>
           </motion.div>
