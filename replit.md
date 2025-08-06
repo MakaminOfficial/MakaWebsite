@@ -38,6 +38,7 @@ Visual standards: Royal-grade precision suitable for regulatory and ministerial 
 - **VIP Shareholder System**: Secure, PostgreSQL-backed digital shareholder management platform with real-time updates, advanced filtering, and mobile optimization.
 - **Authentic Content Integration**: All content derived from actual company profiles, project data, certifications, and news articles.
 - **Zero Tolerance Protocol**: Strict adherence to "خطاء صفر في كل شي" for technical and visual precision, ensuring no errors, placeholders, or inconsistencies.
+- **Advanced News Components**: Dynamic pulse indicators replace reading time displays across all news components (news-new.tsx, news-enhanced.tsx, news-premium.tsx) with red indicators for urgent news, green for active announcements, and Arabic tooltips "الخبر حي – قيد التحديث".
 
 ## External Dependencies
 
