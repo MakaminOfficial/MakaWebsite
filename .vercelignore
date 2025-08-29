@@ -1,0 +1,10 @@
+# تجاهل ملفات Replit / Shadow
+*.md
+*.txt
+*.tar.gz
+replit.*
+REPLIT_*
+SHADOW_*
+
+# تجاهل ملفات السيرفر المؤقتة
+server/*
